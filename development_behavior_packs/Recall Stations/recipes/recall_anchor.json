@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "recall_stations:recall_anchor"
+    },
+
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:planks"
+      },
+      "X": {
+        "item": "recall_stations:recall_core"
+      }
+    },
+    "result": {
+      "item": "recall_stations:recall_anchor"
+    }
+  }
+}

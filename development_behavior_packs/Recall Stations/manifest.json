@@ -1,0 +1,23 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "Behaviours for Recall Stations",
+        "name": "Recall Stations",
+        "uuid": "4e59c64e-6e07-11ea-bc55-0242ac130003",
+        "version": [1, 0, 0]
+    },
+    "modules": [
+        {
+            "description": "Behaviours for Recall Stations",
+            "type": "data",
+            "uuid": "4e59c8b0-6e07-11ea-bc55-0242ac130003",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+      {
+        "uuid": "636bad9a-6e07-11ea-bc55-0242ac130003",
+        "version": [1, 0, 0]
+      }
+    ]
+}

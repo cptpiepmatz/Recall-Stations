@@ -1,0 +1,5 @@
+item.recall_stations:recall_core.name=Recall Core
+item.recall_stations:recall_berry.name=Recall Berry
+
+tile.recall_stations:recall_anchor.name=Recall Anchor
+tile.recall_stations:recall_anchor.bind=Anchor marked

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "recall_stations:recall_berry"
+    },
+
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:sweet_berries"
+      },
+      "X": {
+        "item": "minecraft:dye",
+        "data": 4
+      }
+    },
+    "result": {
+      "item": "recall_stations:recall_berry",
+      "count": 8
+    }
+  }
+}

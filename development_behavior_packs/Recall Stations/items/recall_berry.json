@@ -1,0 +1,18 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "recall_stations:recall_berry"
+		},
+		"components": {
+			"minecraft:max_stack_size": 16,
+			"minecraft:foil": false,
+			"minecraft:food": {
+				"saturation_modifier": "normal",
+				"nutrition": 1,
+				"can_always_eat": true
+			},
+			"minecraft:use_duration": 32
+		}
+	}
+}

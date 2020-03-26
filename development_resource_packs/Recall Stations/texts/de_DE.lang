@@ -1,0 +1,5 @@
+item.recall_stations:recall_core.name=Rückkehr Kern
+item.recall_stations:recall_berry.name=Rückkehr Beere
+
+tile.recall_stations:recall_anchor.name=Rückkehr Anker
+tile.recall_stations:recall_anchor.bind=Anker markiert

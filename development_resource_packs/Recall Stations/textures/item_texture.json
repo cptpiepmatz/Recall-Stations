@@ -1,0 +1,12 @@
+{
+  "resource_pack_name": "recall_stations",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "recall_core": {
+      "textures":"textures/items/recall_core.png"
+    },
+    "recall_berry": {
+      "textures": "textures/items/recall_berry.png"
+    }
+  }
+}
