@@ -4,7 +4,7 @@ An easy way to return to your home/base in Minecraft Bedrock Edition. (This does
 
 ## What is it?
 
-This is a little behavior pack bundled with a resource pack that allows you to that a Recall Anchor and some Recall Berries.
+This is a little behavior pack bundled with a resource pack that allows you to teleport to a Recall Anchor and some Recall Berries.
 ![demo-video](demo/demoGIF.gif)
 See also this clip with sound in [HD](demo/demoHD.mp4) or [FHD](demo/demoFHD.mp4)
 
