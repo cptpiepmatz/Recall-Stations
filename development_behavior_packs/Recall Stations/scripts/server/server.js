@@ -18,29 +18,30 @@ system.initialize = function() {
 };
 
 system.listenForEvent(
-  "minecraft:block_interacted_with",
+  "minecraft:entity_sneak",
   eventData => {
-    let player = eventData.data.player;
-    let block_position = eventData.data.block_position;
+    if (!eventData.data.sneaking) return;
 
-    let entityTickingArea = system.getComponent(
-      player, "minecraft:tick_world"
-    ).data.ticking_area;
+    let player = eventData.data.entity;
 
-    let block = system.getBlock(entityTickingArea, block_position);
+    let handContainer = system.getComponent(player, "minecraft:hand_container");
+    if (handContainer.data[0].item !== "recall_stations:recall_berry") return;
 
-    let handContainer = system.getComponent(
-      player, "minecraft:hand_container"
-    );
-    let mainHandItem = handContainer.data[0];
+    let position = system.getComponent(player, "minecraft:position").data;
+    position.y = position.y - 1;
 
-    if (mainHandItem.__identifier__ != "recall_stations:recall_berry") return;
-    if (block.__identifier__ == "recall_stations:recall_anchor") {
-      updateCoordinates(player, block_position);
-      playAnchorSound(player);
-      notifyAnchorMark(player);
-    }
-});
+    let tickingArea =
+      system.getComponent(player, "minecraft:tick_world")
+        .data.ticking_area;
+
+    let underBlock = system.getBlock(tickingArea, position);
+    if (underBlock.__identifier__ !== "recall_stations:recall_anchor") return;
+
+    updateCoordinates(player, underBlock.block_position);
+    playAnchorSound(player);
+    notifyAnchorMark(player);
+  }
+);
 
 system.listenForEvent(
   "minecraft:entity_use_item", async function(eventData) {
@@ -274,4 +275,10 @@ function getPlayerTarget(player) {
   ",z=" +
   position.data.z +
   "]";
+}
+
+function sendMessage(message = "") {
+  let messageData = system.createEventData("minecraft:display_chat_event");
+  messageData.data.message = message;
+  system.broadcastEvent("minecraft:display_chat_event", messageData);
 }

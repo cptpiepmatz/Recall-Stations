@@ -1,17 +1,18 @@
 {
-    "format_version": 1,
+    "format_version": 2,
     "header": {
         "description": "Recall to any of your Anchors with just a little Berry",
         "name": "Recall Stations",
         "uuid": "636bad9a-6e07-11ea-bc55-0242ac130003",
-        "version": [1, 1, 0]
+        "version": [1, 2, 0],
+        "min_engine_version": [1, 16, 0]
     },
     "modules": [
         {
             "description": "Resources for Recall Stations",
             "type": "resources",
             "uuid": "636baf70-6e07-11ea-bc55-0242ac130003",
-            "version": [1, 1, 0]
+            "version": [1, 2, 0]
         }
     ]
 }

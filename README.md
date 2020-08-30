@@ -2,6 +2,9 @@
 
 An easy way to return to your home/base in Minecraft Bedrock Edition. (This does not work with Minecraft Java Edition!)
 
+## Important
+Due to changes in the Minecraft Bedrock Scripting API is it no longer possible to right the anchor. You need to stand on top of it and sneak to mark the anchor.
+
 ## What is it?
 
 This is a little behavior pack bundled with a resource pack that allows you to teleport to a Recall Anchor and some Recall Berries.
@@ -9,7 +12,7 @@ This is a little behavior pack bundled with a resource pack that allows you to t
 See also this clip with sound in [HD](demo/demoHD.mp4) or [FHD](demo/demoFHD.mp4)
 
 ## Usage
-Craft a Recall Anchor and some Recall Berries. Right click on the Recall Anchor with a berry to mark the location. Now you can eat a berry in order to get teleported to it.
+Craft a Recall Anchor and some Recall Berries. Stand on top of the Recall Anchor with a berry and sneak to mark the location. Now you can eat a berry in order to get teleported to it.
 
 ## Recipes
 
